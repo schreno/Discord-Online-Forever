@@ -6,7 +6,7 @@ const bot = new Eris(process.env.token);
 bot.on("ready", () => {
   console.log(`Connected as ${bot.user.username}#${bot.user.discriminator}`);
 
-  bot.editStatus("dnd");
+  bot.editStatus("idle");
 });
 
 bot.on("error", (err) => {
